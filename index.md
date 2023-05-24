@@ -9,6 +9,9 @@ While recent large-scale neural codec language models have shown significant imp
 
 ### Prompting v.s. Separate Speaker Encoder (Section 4.1)
 
+* P-Flow: Use Speech-prompted text encoder
+* P-Flow (w/o Prompt): Use a fixed-size speaker embedding from a transformer-based speech encoder
+
 <table>
    <thead>
       <tr>
@@ -155,7 +158,7 @@ While recent large-scale neural codec language models have shown significant imp
    </tbody>
 </table>
 
-#### Euler Steps N (gamma=1)
+#### Number of Euler Steps N (gamma=1)
 <table>
    <thead>
       <tr>
