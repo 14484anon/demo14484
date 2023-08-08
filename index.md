@@ -1,6 +1,164 @@
 
 ## P-Flow: A Fast and Data-Efficient Zero-Shot TTS through Speech Prompting
 
+### Rebuttal
+
+### Rebuttal 1. P-Flow w/ OOD data: Model Comparison (VCTK)
+<table>
+   <thead>
+      <tr>
+      <th style="text-align: center">Text</th>
+         <th style="text-align: center">GT</th>
+         <th style="text-align: center">Reference</th>
+         <th style="text-align: center">P-Flow</th>
+         <th style="text-align: center">VALL-E</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+      <td style="text-align: left;vertical-align:middle;width: 420px;">We have to reduce the number of plastic bags.</td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/1_gt.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/1_reference.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/1_pflow.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/1_valle.wav" type="audio/wav"></audio></td>
+      </tr>
+      <tr>
+      <td style="text-align: left;vertical-align:middle;width: 420px;">So what is the campaign about?</td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/2_gt.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/2_reference.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/2_pflow.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/2_valle.wav" type="audio/wav"></audio></td>
+      </tr>
+      <tr>
+      <td style="text-align: left;vertical-align:middle;width: 420px;">My life has changed a lot.</td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/3_gt.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/3_reference.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/3_pflow.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/3_valle.wav" type="audio/wav"></audio></td>
+      </tr>
+      <tr>
+      <td style="text-align: left;vertical-align:middle;width: 420px;">Nothing is yet confirmed.</td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/4_gt.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/4_reference.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/4_pflow.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/4_valle.wav" type="audio/wav"></audio></td>
+      </tr>
+      <tr>
+      <td style="text-align: left;vertical-align:middle;width: 420px;">I could hardly move for the next couple of days.</td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/5_gt.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/5_reference.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/5_pflow.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/5_valle.wav" type="audio/wav"></audio></td>
+      </tr>
+      <tr>
+      <td style="text-align: left;vertical-align:middle;width: 420px;">His son has been travelling with the Tartan Army for years.</td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/6_gt.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/6_reference.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/6_pflow.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/6_valle.wav" type="audio/wav"></audio></td>
+      </tr>
+      <tr>
+      <td style="text-align: left;vertical-align:middle;width: 420px;">Her husband was very concerned that it might be fatal.</td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/7_gt.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/7_reference.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/7_pflow.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/7_valle.wav" type="audio/wav"></audio></td>
+      </tr>
+      <tr>
+      <td style="text-align: left;vertical-align:middle;width: 420px;">We’ve made a couple of albums.</td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/8_gt.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/8_reference.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/8_pflow.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_vctk/8_valle.wav" type="audio/wav"></audio></td>
+      </tr>
+   </tbody>
+</table>
+
+----------------------
+
+### Rebuttal 2. Motivation for flow matching generative model: Flow matching decoder v.s. DDPM decoder
+
+We compare the performance of flow matching decoder and DDPM decoder in a single-speaker TTS task. We trained both models on LJSpeech dataset for 400K iterations. For this experiment, we didn't use the speech prompting mechanism and masking in P-Flow. 
+* Text encoder: 6-layer Transformer
+* Alignment: Monotonic alignment search (MAS)
+* Decoder: 18-layer 1D WaveNet
+* Training objective: (Flow matching) Encoder loss + Flow matching loss (DDPM) Encoder loss + Score matching loss
+
+#### Sentence 1: 
+<table>
+   <thead>
+      <tr>
+      <th style="text-align: center">Model</th>
+         <th style="text-align: center">N = 2</th>
+         <th style="text-align: center">N = 4</th>
+         <th style="text-align: center">N = 10</th>
+         <th style="text-align: center">N = 50</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+      <td style="text-align: left;vertical-align:middle;width: 420px;">Flow matching decoder (T=1.0) </td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/1_fm_2.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/1_fm_4.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/1_fm_10.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/1_fm_50.wav" type="audio/wav"></audio></td>
+      </tr>
+      <tr>
+      <td style="text-align: left;vertical-align:middle;width: 420px;">DDPM decoder (T=1.5)</td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/1_ddpm_2_1.5.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/1_ddpm_4_1.5.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/1_ddpm_10_1.5.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/1_ddpm_50_1.5.wav" type="audio/wav"></audio></td>
+      </tr>
+      <tr>
+      <td style="text-align: left;vertical-align:middle;width: 420px;">DDPM decoder (T=1.0)</td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/1_ddpm_2_1.0.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/1_ddpm_4_1.0.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/1_ddpm_10_1.0.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/1_ddpm_50_1.0.wav" type="audio/wav"></audio></td>
+      </tr>
+   </tbody>
+</table>
+
+#### Sentence 2: 
+<table>
+   <thead>
+      <tr>
+      <th style="text-align: center">Model</th>
+         <th style="text-align: center">N = 2</th>
+         <th style="text-align: center">N = 4</th>
+         <th style="text-align: center">N = 10</th>
+         <th style="text-align: center">N = 50</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+      <td style="text-align: left;vertical-align:middle;width: 420px;">Flow matching decoder (T=1.0)</td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/2_fm_2.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/2_fm_4.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/2_fm_10.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/2_fm_50.wav" type="audio/wav"></audio></td>
+      </tr>
+      <tr>
+      <td style="text-align: left;vertical-align:middle;width: 420px;">DDPM decoder (T=1.5)</td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/2_ddpm_2_1.5.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/2_ddpm_4_1.5.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/2_ddpm_10_1.5.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/2_ddpm_50_1.5.wav" type="audio/wav"></audio></td>
+      </tr>
+      <tr>
+      <td style="text-align: left;vertical-align:middle;width: 420px;">DDPM decoder (T=1.0)</td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/2_ddpm_2_1.0.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/2_ddpm_4_1.0.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/2_ddpm_10_1.0.wav" type="audio/wav"></audio></td>
+         <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/rebuttal_fm/2_ddpm_50_1.0.wav" type="audio/wav"></audio></td>
+      </tr>
+   </tbody>
+</table>
+
+
+----------------------
+
 
 ### Abstract
 
