@@ -84,7 +84,7 @@ We compare the performance of flow matching decoder and DDPM decoder in a single
 * Decoder: 18-layer 1D WaveNet
 * Training objective: (Flow matching) Encoder loss + Flow matching loss (DDPM) Encoder loss + Score matching loss
 
-#### Sentence 1: 
+#### Sentence 1: Does the quick brown fox jump over the lazy dog?
 <table>
    <thead>
       <tr>
@@ -120,7 +120,7 @@ We compare the performance of flow matching decoder and DDPM decoder in a single
    </tbody>
 </table>
 
-#### Sentence 2: 
+#### Sentence 2: There were others less successful.
 <table>
    <thead>
       <tr>
